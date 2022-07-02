@@ -40,7 +40,7 @@ st.markdown(
 
 @st.experimental_memo
 def get_data():
-    dati = pd.read_excel('df_soffiteir.xlsx')
+    dati = pd.read_excel("./df_soffiteir.xlsx")
     return dati
 
 df = get_data()
@@ -121,7 +121,7 @@ def giorno_max_messaggi():
     return giorno_max
 
 ################################
-##### CFREAZIONE SIDE BAR ######
+##### CREAZIONE SIDE BAR ######
 ################################
 
 option = st.sidebar.selectbox('Seleziona la pagina', ('Home page', 'Insights'))
